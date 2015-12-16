@@ -1,4 +1,5 @@
 import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
 import React from 'react';
 import {render as Render} from 'react-dom';
 
@@ -7,6 +8,7 @@ class ComposedApp extends React.Component{
     return (
       <div>
         <Header></Header>
+        <Footer></Footer>
       </div>
     );
   }
