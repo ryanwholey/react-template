@@ -1,17 +1,28 @@
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
-import React from 'react';
-import {render as Render} from 'react-dom';
+import React, {Component} from 'react';
+import * as actions from './services/actions.jsx';
+import {connect} from 'react-redux';
+import Content from './components/Content.jsx';
+import List from './components/List.jsx';
 
-class ComposedApp extends React.Component{
-  render(){
-    return (
-      <div>
-        <Header></Header>
-        <Footer></Footer>
-      </div>
+class App extends Component{
+  componentWillMount() {
+    this.props.dispatch(actions.getData())
+  }
+  render() {
+     return (
+       <div id="composedApp">
+         <div id="body">
+          <Content />
+         </div>
+       </div>
     );
   }
 };
 
-Render(<ComposedApp/>, document.getElementById('app'));
+const select = (state) =>{
+  return {}
+}
+
+export default connect(select)(App);
+
+//return <div>content</div>

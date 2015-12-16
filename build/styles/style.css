@@ -1,0 +1,90 @@
+body {
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+.list-container {
+  width: 200px;
+  border: 5px solid darkgrey;
+}
+.list-movie{
+  display:flex;
+  flex-diretion: row;
+  justify-content: space-between;
+  outline: 3px solid darkgrey;
+  background: lightgrey;
+}
+
+.btn:hover{
+  background:darkgrey;
+}
+
+.list-title {
+  font-size: 1.5em;
+}
+
+.list-heart {
+  color:white;
+}
+
+.list-heart:hover {
+  color:red;
+}
+
+.turn-pink {
+  color:pink;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.movie-back-btn{
+  border:3px solid lightskyblue;
+  width:60px;
+  background: lightgrey;
+  font-size:1.3em;
+}
+.movie-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.movie-poster {
+  max-width:300px;
+}
+.movie-description {
+  text-align:center;
+}
+.list-display {
+  width:400px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+.list-header {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.list-header > input {
+  width: 200px;
+  height: 30px;
+  margin:0 0 10px 0;
+  border: 5px solid grey;
+  font-size: 14pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

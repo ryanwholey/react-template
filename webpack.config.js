@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   entry: [
     'babel-polyfill',
-    './app/App.jsx'
+    './app/index.jsx'
   ],
   output: {
     path: './build',
@@ -12,10 +12,7 @@ module.exports = {
   module: {
     loaders:[{
       test: /\.jsx?$/,
-      loader: 'babel',
-      query: {
-        presets: ['react','stage-0','es2015']
-      },
+      loaders: ['react-hot','babel'],
       exclude: [/node_modules/]
     }],
   }
