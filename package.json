@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "server": "nodemon debug server/server.js",
     "dev": "./buildEnv.sh"
+  },
+  "babel":{
+    "presets": ["react","stage-0", "es2015"]
   },
   "author": "",
   "license": "ISC",

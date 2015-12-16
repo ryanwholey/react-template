@@ -1,10 +1,10 @@
 import React from 'react';
 
-var Footer = React.createClass({
+const Footer = React.createClass({
   render(){
     return (
       <div>
-        <p>I am dont change data plz </p>
+        <h3>Footer i am</h3>
       </div>
     );
   }

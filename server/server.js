@@ -17,8 +17,9 @@ app.use('/', express.static(__dirname + '/../build'));
 var data = 'I am data';
 
 app.get('/api/data', function(req, res){
+  debugger;
   res.send(data);
 });
 
 app.listen(8000);
-console.log('listening on localhost:8000');
+// console.log('listening on localhost:8000');
